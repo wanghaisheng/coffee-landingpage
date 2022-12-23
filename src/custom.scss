@@ -147,10 +147,6 @@ body {
   color: $sandDark;
   margin-top: 10rem;
 
-  // .container {
-  //   max-width: 1500px!important;
-  // }
-
   img {
     object-fit: cover;
     object-position: center;
@@ -178,24 +174,18 @@ body {
     margin-bottom: 10rem;
   }
 
-  // .last-col {
-  //   padding-left: 0px!important;
-  //   padding-right: 0px!important;
-  // }
+  .zoom {
+    transition: transform .3s;
+  }
 
-  // .grid-pics {
-  //   div {
-  //     overflow: hidden!important;
-  //   }
+  .zoom:hover {
+    transform: scale(1.1);
+  }
 
-  //   img {
-  //     transition: transform .3s;
-  //   }
+  .grid-col {
+    overflow: hidden!important;
+  }
 
-  //   img:hover {
-  //     transform: scale(1.1);
-  //   }
-  // }
 }
 
 ///  Features //////////////////////////////////////////////
@@ -563,23 +553,6 @@ body {
     max-width: 100% !important;
   }
 
-  #about {
-    .grid-pics {
-      .col-md-3 {
-        margin-bottom: 3rem!important;
-      }
-
-      .mb-3 {
-        margin-bottom: 3rem!important;
-      }
-
-      img:hover {
-        transform: none!important;
-      }
-      
-    }
-  }
-
   #features{
     .dark-overlay{
       
@@ -631,6 +604,22 @@ body {
   #about {
     margin-top: 5rem;
     text-align: center;
+
+    .photo-grid {
+      .col-lg-5, .col-lg-3 {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+
+    .col-lg-4 {
+      padding-top: 1rem;
+    }
+
+    .zoom:hover {
+      transform: none!important;
+    }
+  
+    }
 
   }
 
