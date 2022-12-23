@@ -4,18 +4,24 @@ import pic3 from '../assets/img/gallery3.jpg'
 import pic4 from '../assets/img/gallery4.jpg'
 import pic5 from '../assets/img/gallery5.jpg'
 import pic6 from '../assets/img/gallery6.jpg'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 function Gallery() {
+  useEffect(()=>{
+    AOS.init({duration: 2000})
+  },[])
   return (
     <>
-      <div className="mx-auto">
+      <div className="mx-auto" data-aos="zoom-in">
       <div className="heading text-center">
         <h4 className='text-uppercase'>gallery</h4>
         <h2>Snapshots from our cofee shop</h2>
       </div>
     </div>
 
-    <div className="container">
+    <div className="container" data-aos="zoom-in">
 
     <div className="row py-5">
       <div className="col-lg-3 d-flex flex-column justify-content-between">

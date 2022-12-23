@@ -2,10 +2,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Review from "./Review";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 function Testimonials() {
+  useEffect(()=>{
+    AOS.init({duration: 2000})
+  },[])
+
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -42,14 +50,14 @@ function Testimonials() {
 
   return (
     <>
-    <div className="mx-auto">
+    <div className="mx-auto" data-aos="zoom-in">
       <div className="heading text-center">
         <h4 className='text-uppercase'>reviews</h4>
         <h2>Hear from our regular customers</h2>
       </div>
     </div>
     
-    <div className="review-slider">
+    <div className="review-slider" data-aos="fade-left">
 
       <Slider {...settings}>
           <Review text={'I really love this coffee shop! Their blends always never disappoint. Also the fact that they give free espresso every Friday really cheers me up when I take it after work.'} />

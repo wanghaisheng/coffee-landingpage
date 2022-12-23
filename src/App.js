@@ -7,16 +7,23 @@ import Banner from './components/Banner';
 import Testimonials from './components/Testimonials';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 
 
 function App() {
   document.body.style.backgroundColor = '#FFFBF6';
+  useEffect(()=>{
+    AOS.init({duration: 1000})
+  },[])
   return (
     <>
     <section id='home' className='landing-section'>
       <div className="dark-overlay">
         <div className="container">
-          <nav id='main-nav' className='navbar navbar-expand-md py-4'>
+          <nav id='main-nav' className='navbar navbar-expand-md py-4' data-aos="fade-right">
             <a href="#home" className="navbar-brand">
               <h3>Creme<span>Brew</span></h3>
             </a>
@@ -48,7 +55,7 @@ function App() {
           </nav>
 
           <div className="row pt-5 d-flex" id="headline">
-            <div className="offset-lg-5 col-lg-7 text-right">
+            <div className="offset-lg-5 col-lg-7 text-right" data-aos="fade-left">
               <h1 className="text-capitalize">The perfect cup of <span>coffee</span></h1>
               <p className="text-right">A place that guarantees a perfect cup of your favorite blend because life is too short to drink bad coffee</p>
               

@@ -2,11 +2,17 @@ import Card from "./Card"
 import { AiOutlineCoffee } from "react-icons/ai"
 import { AiOutlineSmile } from "react-icons/ai"
 import { BiCoffeeTogo } from "react-icons/bi"
+import { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 function Features() {
+  useEffect(()=>{
+    AOS.init({duration: 2000})
+  },[])
   return (
 
-      <div className="container">
+      <div className="container" data-aos="fade-left">
         <h2 className="text-center offer mb-4">Here's what we offer</h2>
         <div className="row d-flex justify-content-around">
           

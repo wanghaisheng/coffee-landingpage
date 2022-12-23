@@ -3,13 +3,19 @@ import about1 from '../assets/img/about1.jpg'
 import about2 from '../assets/img/about2.jpg'
 import about3 from '../assets/img/about3.jpg'
 import about4 from '../assets/img/about4.jpg'
+import { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 
 function About() {
+  useEffect(()=>{
+    AOS.init({duration: 2000})
+  },[])
   return (
     <>
       <div className="container">
-        <div className="row">
+        <div className="row" data-aos="fade-left">
           <div className="d-none d-lg-flex col-lg-6">
             <img src={aboutPic} alt="About cremebrew" className='img-fluid border rounded h-100' />
           </div>
@@ -27,7 +33,7 @@ function About() {
           </div>
         </div>
 
-        <div className="row pt-5 grid-pics">
+        <div className="row pt-5 grid-pics" data-aos="zoom-in">
           <div className="col-md-3 col-lg-5">
             <a href={about1} data-toggle="lightbox" data-gallery="img-gallery">
               <img src={about1} alt="About cremebrew" className='img-fluid border rounded h-100' />

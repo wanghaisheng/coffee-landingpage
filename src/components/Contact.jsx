@@ -1,9 +1,16 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 import Button from './Button'
 import Card from './Card'
 
 function Contact() {
   const [message, setMessage] = useState('')
+
+  useEffect(()=>{
+    AOS.init({duration: 2000})
+  },[])
+
 
   function onChange(e){
     setMessage(e.target.value)
@@ -15,7 +22,7 @@ function Contact() {
       <div className="dark-overlay d-flex justify-content-center align-items-center">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-up">
               <Card variant={'feature'}>
                   <h3 className='text-uppercase mb-5 mt-4'>opening hours</h3>
                   
@@ -56,7 +63,7 @@ function Contact() {
               </Card>
             </div>
 
-            <div className="col-lg-6 contact-form">
+            <div className="col-lg-6 contact-form" data-aos="fade-up">
                 <div>
                   <h2 className='text-uppercase  mt-5 mb-3'>contact us</h2>
                   <h4>#529 South Road, Edsa, Cubao</h4>

@@ -1,4 +1,6 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 import Category from "./Category"
 import MenuItem from "./MenuItem"
 import category1 from '../assets/img/category1.jpg'
@@ -7,17 +9,20 @@ import category3 from '../assets/img/category3.jpg'
 
 function Menu() {
   const [selected, setSelected] = useState('coffee')
+  useEffect(()=>{
+    AOS.init({duration: 2000})
+  },[])
   return (
     <>
       <div className="container d-flex justify-content-center">
         <div className="col">
 
-          <div className="heading text-center">
+          <div className="heading text-center" data-aos="zoom-in">
               <h4 className='text-uppercase'>what's</h4>
               <h2>In store for you</h2>
           </div>
 
-          <div className="categories d-flex justify-content-between w-100 pt-4">
+          <div className="categories d-flex justify-content-between w-100 pt-4" data-aos="fade-left">
             <div className="col-4 rounded" onClick={()=> setSelected('coffee')}>
               <Category bgImg={category1} text='coffee' />
             </div>
@@ -31,7 +36,7 @@ function Menu() {
             </div>
           </div>
 
-          <div className={`row d-${selected === 'coffee' ? 'flex' : 'none'} flex-row mt-5 justify-content-center`}>
+          <div className={`row d-${selected === 'coffee' ? 'flex' : 'none'} flex-row mt-5 justify-content-center`} data-aos="zoom-in">
             <div className="col-lg-5">
               <MenuItem name={'latte'} price={150} description={'Freshly brewed coffee and steamed milk'} top={true} />
               <MenuItem name={'hazelnut latte'} price={150} description={'Espresso with steamed milk and hazelnut syrup'} />
