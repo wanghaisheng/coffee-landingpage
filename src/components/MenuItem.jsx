@@ -15,7 +15,7 @@ function MenuItem({name, price, description, top}) {
 MenuItem.defaultProps = {
   name: 'name',
   price: 100,
-  description: 'description',
+  description: '',
   top: false
 }
 
