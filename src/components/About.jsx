@@ -34,31 +34,6 @@ function About() {
         </div>
 
             </div>
-
-          <div className="container" data-aos="zoom-in">
-          <div className="row pb-5 photo-grid">
-            <div className="col-lg-5 d-flex flex-column justify-content-between grid-col">
-              <a href={about1} data-toggle="lightbox" data-gallery="img-gallery" className='h-100'>
-                <img src={about1} alt="gallery" className='img-fluid rounded zoom h-100' />  
-              </a>
-            </div>
-            <div className="col-lg-3 grid-col">
-              <a href={about2} data-toggle="lightbox" data-gallery="img-gallery" className='h-100'>
-                <img src={about2} alt="gallery" className='img-fluid rounded zoom h-100' />
-              </a>
-            </div>
-            <div className="col-lg-4 d-flex flex-column justify-content-between grid-col">
-              <a href={about3} data-toggle="lightbox" data-gallery="img-gallery" className='h-100 pb-3'>
-                <img src={about3} alt="gallery" className='img-fluid rounded zoom h-100' />  
-              </a>
-
-              <a href={about4} data-toggle="lightbox" data-gallery="img-gallery" className='h-100 pt-3'>
-                <img src={about4} alt="gallery" className='img-fluid rounded zoom h-100' />  
-              </a>
-            </div>
-          </div>
-          </div>
-    
     </>
   )
 }
