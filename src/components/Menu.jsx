@@ -14,7 +14,7 @@ function Menu() {
   },[])
   return (
     <>
-      <div className="container d-flex justify-content-center">
+      <div className="container d-flex justify-content-center" data-aos="zoom-in">
         <div className="col">
 
           <div className="heading text-center" data-aos="zoom-in">
@@ -22,7 +22,7 @@ function Menu() {
               <h2>In store for you</h2>
           </div>
 
-          <div className="categories d-flex justify-content-between w-100 pt-4" data-aos="fade-left">
+          <div className="categories d-flex justify-content-between w-100 pt-4" data-aos="zoom-in" data-aos-duration="3500">
             <div className="col-4 rounded" onClick={()=> setSelected('coffee')}>
               <Category bgImg={category1} text='coffee' />
             </div>
@@ -36,7 +36,7 @@ function Menu() {
             </div>
           </div>
 
-          <div className={`row d-${selected === 'coffee' ? 'flex' : 'none'} flex-row mt-5 justify-content-center`} data-aos="zoom-in">
+          <div className={`row d-${selected === 'coffee' ? 'flex' : 'none'} flex-row mt-5 justify-content-center`}>
             <div className="col-lg-5">
               <MenuItem name={'latte'} price={150} description={'Freshly brewed coffee and steamed milk'} top={true} />
               <MenuItem name={'hazelnut latte'} price={150} description={'Espresso with steamed milk and hazelnut syrup'} />
