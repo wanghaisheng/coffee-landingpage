@@ -33,31 +33,35 @@ function About() {
           </div>
         </div>
 
-          <div className="row pt-5 grid-pics" data-aos="zoom-in">
-            <div className="col-md-5 col-lg-5">
-              <a href={about1} data-toggle="lightbox" data-gallery="img-gallery">
-                <img src={about1} alt="About cremebrew" className='img-fluid border rounded h-100' />
-              </a>
             </div>
-            <div className="col-md-3 col-lg-3">
-              <a href={about2} data-toggle="lightbox" data-gallery="img-gallery">
-                <img src={about2} alt="About cremebrew" className='img-fluid border rounded h-100' />
-              </a>
-            </div>
-            <div className="col-md-4 col-lg-4">
-              <div className="col last-col">
-                <a href={about3} data-toggle="lightbox" data-gallery="img-gallery">
-                  <img src={about3} alt="About cremebrew" className='img-fluid border rounded mb-3 h-100' />
-                </a>
+            
+            <div className="container">
 
-                <a href={about4} data-toggle="lightbox" data-gallery="img-gallery">
-                  <img src={about4} alt="About cremebrew" className='img-fluid border rounded h-100' />
-                </a>
-              </div>
+              <div className="row pt-5 grid-pics" data-aos="zoom-in">
+                <div className="col-md-6 col-lg-5">
+                  <a href={about1} data-toggle="lightbox" data-gallery="img-gallery">
+                    <img src={about1} alt="About cremebrew" className='img-fluid border rounded h-100' />
+                  </a>
+                </div>
+                <div className="col-md-3 col-lg-3">
+                  <a href={about2} data-toggle="lightbox" data-gallery="img-gallery">
+                    <img src={about2} alt="About cremebrew" className='img-fluid border rounded h-100' />
+                  </a>
+                </div>
+                <div className="col-md-3 col-lg-4 d-flex flex-column justify-content-between ">
+
+                    <a href={about3} data-toggle="lightbox" data-gallery="img-gallery">
+                      <img src={about3} alt="About cremebrew" className='img-fluid border rounded mb-3 h-100' />
+                    </a>
+
+                    <a href={about4} data-toggle="lightbox" data-gallery="img-gallery">
+                      <img src={about4} alt="About cremebrew" className='img-fluid border rounded h-100' />
+                    </a>
+           
+            
+                </div>
             </div>
-         
-        </div>
-      </div>
+          </div>
     
     </>
   )
