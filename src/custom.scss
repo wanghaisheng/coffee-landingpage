@@ -147,6 +147,10 @@ body {
   color: $sandDark;
   margin-top: 10rem;
 
+  .container {
+    max-width: 1500px!important;
+  }
+
   img {
     object-fit: cover;
   }
