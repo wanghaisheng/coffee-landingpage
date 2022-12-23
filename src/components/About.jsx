@@ -33,7 +33,9 @@ function About() {
           </div>
         </div>
 
+        </div>
 
+          <div className="container">
           <div className="row pt-5 grid-pics" data-aos="zoom-in">
             <div className="col-lg-5">
               <a href={about1} data-toggle="lightbox" data-gallery="img-gallery">
