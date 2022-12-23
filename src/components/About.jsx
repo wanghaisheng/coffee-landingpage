@@ -37,7 +37,7 @@ function About() {
             
             <div className="container">
 
-              <div className="row pt-5 grid-pics" data-aos="zoom-in">
+              <div className="row pt-5 grid-pics">
                 <div className="col-md-6 col-lg-5">
                   <a href={about1} data-toggle="lightbox" data-gallery="img-gallery">
                     <img src={about1} alt="About cremebrew" className='img-fluid border rounded h-100' />
