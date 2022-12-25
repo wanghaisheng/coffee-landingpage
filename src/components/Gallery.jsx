@@ -17,7 +17,7 @@ function Gallery() {
       <div className="mx-auto" data-aos="zoom-in">
       <div className="heading text-center">
         <h4 className='text-uppercase'>gallery</h4>
-        <h2>Snapshots from our cofee shop</h2>
+        <h2>Snapshots from our coffee shop</h2>
       </div>
     </div>
 
