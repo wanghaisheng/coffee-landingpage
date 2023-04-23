@@ -16,7 +16,6 @@ function Contact() {
     setMessage(e.target.value)
   }
 
-
   return (
     <>
       <div className="dark-overlay d-flex justify-content-center align-items-center">

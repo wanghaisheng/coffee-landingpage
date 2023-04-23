@@ -1,8 +1,4 @@
 import aboutPic from '../assets/img/aboutpic.jpg'
-import about1 from '../assets/img/about1.jpg'
-import about2 from '../assets/img/about2.jpg'
-import about3 from '../assets/img/about3.jpg'
-import about4 from '../assets/img/about4.jpg'
 import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
